@@ -41,10 +41,26 @@
     --color-nav-links: #726E8D;
 }
 
+.btn{
+    text-decoration: none;
+    color: var(--color-dark-primary);
+    background-color: var(--color-light-gray);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+    transition: all 0.8s;
+}
+
+.btn:hover{
+    transition: all 0.8s;
+    color: var(--color-light-gray);
+    background-color: var(--color-dark-primary);
+}
+
 header {
     display: grid;
     row-gap: 20px;
-    padding: 0 2vw;
+    padding: 20px 2vw;
     padding-top: 20px;
 }
 
@@ -93,4 +109,124 @@ header nav ul a{
 header nav ul a:hover{
     color: var(--color-black);
     transition: all 0.7s;
+}
+main section.header {
+    background-image: url(images/fa9b27255272d76e665cce4314b4aedb.jpg);
+    height: 42vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-right: 8vw;
+}
+
+main section.header div {
+    display: grid;
+    row-gap: 20px;
+    background-color: var(--color-white);
+    grid-column: 2/3;
+    grid-template-rows: max-content;
+    height: 64%;
+    padding: 5vw;
+}
+
+main section.header div h1{
+    font-family: "Clash Display";
+    font-size: 2;
+    font-weight: 400;
+}
+
+main section.header div span{
+    font-family: "Satoshi";
+    font-size: 18;
+    font-weight: 400;
+    color: var(--color-nav-links);
+}
+
+main section.header div a{
+    align-self: flex-end;
+    justify-self: start;
+}
+main section.our-brand{
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    padding-bottom: 40px;
+}
+
+main section.our-brand h2{
+    font-family: "Clash Display";
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+main section.our-brand div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+}
+main section.our-brand div article{
+    display: grid;
+    grid-template-rows: 24px repeat(2, 1fr);
+}
+
+main section.our-brand div article svg{
+    height: 100%;
+}
+
+main section.our-brand div article h3{
+    font-family: "Clash Display";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main section.our-brand div article p{
+    font-family: "Satoshi";
+}
+main section.new-tovar {
+    display: grid;
+    padding: 80px 6vw;
+    row-gap: 36px;
+}
+main section.new-tovar div{
+    display: grid;
+    column-gap: 2vw;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+main section.new-tovar div article {
+    display: grid;
+    grid-template-rows: 305px 1fr;
+    row-gap: 24px;
+    transition: all 0.5s;
+}
+
+main section.new-tovar div article:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+main section.new-tovar div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.new-tovar div p {
+    font-family: "Clash Display";
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+main section.new-tovar div span{
+font-family: Satoshi;
+}
+
+main section.new-tovar a{
+    justify-self: center;
 }
