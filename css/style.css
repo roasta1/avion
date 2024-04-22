@@ -167,6 +167,8 @@ main section.our-brand div {
     column-gap: 2vw;
 }
 main section.our-brand div article{
+    background-color: var(--color-light-gray);
+    padding: 40px;
     display: grid;
     grid-template-rows: 24px repeat(2, 1fr);
 }
